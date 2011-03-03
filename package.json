@@ -1,0 +1,17 @@
+{
+  "name": "sam",
+  "version": "0.0.1",
+  "description": "simple asset manager"
+  "author": "weepy",
+  "licenses":     [{
+    "type":       "MIT",
+    "url": "http://github.com/weepy/sam/raw/master/LICENSE"
+  }],
+  "directories" : {
+    "lib" : "./lib"
+  },
+  "repository": "http://github.com/weepy/sam",
+  "engines" : { "node": ">= 0.4.0" },
+  "main": "./lib/index"
+}
+
