@@ -24,13 +24,13 @@ options:
 * cache: name of cache file or falsy for off
 * pub: path to the public directory
 * host: asset host or falsey for off
-* uglify: munge files ?
+* uglify: minify javascript
 
 If cache is off then either method will return a string containing several html script or link elements
 otherwise it will concatenate the files together and cache them.
 
 
-Example Usage from a real app
+Example Usage 
 ------
  
 <pre>
@@ -42,10 +42,17 @@ sam.js([
   '/js/client/actions.js', 
   '/js/client/analysis.js'
 ], {
-  cache: options.cache ? "chess.cache.js" : false,
+  cache: "chess.cache.js" ,
   pub: "public",
-  host: options.host,
-  uglify: options.uglify
+  host: "http://assets.64sq.com",
+  uglify: true
 })
 </pre>
 
+
+Install
+-------
+
+<pre>
+sudo npm install sam
+</pre>
